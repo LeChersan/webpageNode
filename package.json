@@ -1,0 +1,23 @@
+{
+  "name": "webserverapp",
+  "version": "1.0.0",
+  "description": "Es un proyecto para crear un servidor web con node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "weserver",
+    "node",
+    "js"
+  ],
+  "author": "Nelly Chersan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
+}
