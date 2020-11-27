@@ -10,11 +10,14 @@ app.set('view engine', 'hbs')
 
 // get para mostrar la pagina principal ("home")
 app.get('/', function (req, res) {
-    res.render("home")
+    res.render("home", {title: "Home"} )
 })
 
 app.get('/contacto', function (req, res) {
-    res.render("contacto", {email:"mail@mymail.com", tel: 5527729918})
+    res.render("contacto", {email:"mail@mymail.com", tel: 5527729918, title:"Contacto" })
 })
 
-app.listen(3000)
+// configuracion del puerto para el servidor en la nube
+const port = process.env.PORT || 3000
+
+app.listen(port)
